@@ -2,12 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ButtonComponent from './components/ButtonComponent'
+import ImageComponent from './components/ImageComponent'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <ButtonComponent btnText="Prova"/>
+    <ButtonComponent btnText="Prova2"/>
+    <ButtonComponent btnText="Prova3"/>
+    <ImageComponent srcImage= "https://cdn.pixabay.com/photo/2024/12/20/11/53/architect-9280053_1280.jpg" altImage="Architetto"/>
+
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
